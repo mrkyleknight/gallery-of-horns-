@@ -2,13 +2,15 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import data from './data.json';
+import "./Main.css";
+
 
 class Main extends React.Component {
   render() {
     return (
       <main>
         {data.map(animalObj => {
-          return <HornedBeast animalName={animalObj._id} image_url={animalObj.image_url} />
+          return <HornedBeast animalName={animalObj.title} image_url={animalObj.image_url} />
         })}
 
       {/* <h2> "A beast does not know that he is a beast, and the nearer a man gets to being a beast, the less he knows it."
