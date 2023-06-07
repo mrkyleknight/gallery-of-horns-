@@ -1,13 +1,8 @@
-Number and name of feature: ________________________________
+ Feature #1: Display Images Estimate of time needed to complete: 1 Hour Start time: 1500 Finish time: 1600 Actual time needed to complete: 60 mins
 
-Estimate of time needed to complete: _____
+Feature #2: Allow Users to Favorite Estimate of time needed to complete: 1 Hour Start time: 1600 Finish time: 1745 Actual time needed to complete: 105 mins
 
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
-
+Feature #3: Bootstrap Estimate of time needed to complete: 1 Hour Start time: 1500 Finish time: 1638 Actual time needed to complete: 98 mins
 
 # Getting Started with Create React App
 
