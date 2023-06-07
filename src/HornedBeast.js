@@ -17,7 +17,7 @@ class HornedBeast extends React.Component {
          alt={this.props.animalName}
          style={imageStyle}
         ></img>
-        <p>{this.props.description}</p>
+        {/* <p>{this.props.description}</p> */}
         
        </article>
       
