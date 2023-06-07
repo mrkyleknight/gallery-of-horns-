@@ -4,11 +4,13 @@ Feature #2: Allow Users to Favorite Estimate of time needed to complete: 1 Hour 
 
 Feature #3: Bootstrap Estimate of time needed to complete: 1 Hour Start time: 1500 Finish time: 1638 Actual time needed to complete: 98 mins
 
+:D
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts 
 
 In the project directory, you can run:
 
