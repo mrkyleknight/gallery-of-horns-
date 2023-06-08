@@ -4,7 +4,13 @@ Feature #2: Allow Users to Favorite Estimate of time needed to complete: 1 Hour 
 
 Feature #3: Bootstrap Estimate of time needed to complete: 1 Hour Start time: 1500 Finish time: 1638 Actual time needed to complete: 98 mins
 
-:D
+Lab 3
+
+Feature #1: Display a Modal 
+Estimate of time needed to complete: 2 Hours
+Start time: 1735
+Finish time: 2135
+Actual time needed to complete: 300 mins :
 
 # Getting Started with Create React App
 
