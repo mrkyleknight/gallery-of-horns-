@@ -10,7 +10,7 @@ Feature #1: Display a Modal
 Estimate of time needed to complete: 2 Hours
 Start time: 1735
 Finish time: 2135
-Actual time needed to complete: 300 mins
+Actual time needed to complete: 300 mins :
 
 # Getting Started with Create React App
 
