@@ -4,8 +4,7 @@ import Main from "./Main";
 import Footer from './Footer';
 import data from './data.json';
 import "./Main.css";
-import Form from 'react-bootstrap/Form'
-import { ListGroup } from "react-bootstrap";
+
 
 // import './SelectedBeast';
 
