@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from 'react-bootstrap/Modal';
+import {Modal, Button} from 'react-bootstrap';
 
 
 
@@ -41,7 +41,7 @@ class Selected extends React.Component {
   render() {
   
     return (
-      <>
+      
         <Modal show={this.props.showTheModal} onHide={this.props.closeTheModal}>
         
           <Modal.Header closeButton>
@@ -60,12 +60,12 @@ class Selected extends React.Component {
             )}
           </Modal.Body>
           <Modal.Footer>
-            <button variant="secondary" onClick={this.props.closeTheModal}>
+            <Button variant="primary" onClick={this.props.closeTheModal}>
               Close
-            </button>
+            </Button>
           </Modal.Footer>
         </Modal>
-      </>
+      
     )
 
   }
