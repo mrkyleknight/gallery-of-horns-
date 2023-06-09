@@ -4,6 +4,8 @@ import Main from "./Main";
 import Footer from './Footer';
 import data from './data.json';
 import "./Main.css";
+import Form from 'react-bootstrap/Form'
+import { ListGroup } from "react-bootstrap";
 
 // import './SelectedBeast';
 
@@ -22,11 +24,14 @@ class App extends React.Component {
     // console.log('+++++++', this.state.selectedBeast)
     return (
       <>
+
         <Header hearts={this.state.hearts} />
         <Main
           addHearts={this.addHearts}
           handleOpenModal={this.handleOpenModal}
           data={data}
+
+        
         />
         
         {/* <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
