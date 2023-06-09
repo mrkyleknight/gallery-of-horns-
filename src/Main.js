@@ -2,16 +2,64 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import "./Main.css";
+import data from './data.json';
+import Selected from "./SelectedBeast";
 
 
 class Main extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      // hearts: 1,
+      showModal: false,
+      selectedBeast: null,
+      beastSelection: data
+    }
+
+  }
+
+  addHeart = () => {
+    this.setState({
+      hearts: this.state.hearts + 1
+    });
+  }
+
+  handleOpenModal = (beast) => {
+    console.log(beast);
+    this.setState({
+      showModal: true,
+      selectedBeast: beast
+    });
+  }
+
+  handleCloseModal = () => {
+    this.setState({
+      showModal: false,
+    });
+  };
+
+
+
+
   render() {
     return (
       <main>
-        {this.props.data.map(animalObj => {
-          return <HornedBeast animal={animalObj} animalName={animalObj.title} image_url={animalObj.image_url} addHearts={this.props.addHearts} handleOpenModal={this.props.handleOpenModal}  />
+        {this.state.beastSelection.map((animalObj, idx) => {
+          return <HornedBeast animal={animalObj} animalName={animalObj.title} image_url={animalObj.image_url} addHearts={this.props.addHearts} handleOpenModal={this.handleOpenModal} key={idx} />
         })}
 
+        {
+        this.state.selectedBeast && 
+        <Selected 
+        showTheModal={this.state.showModal}
+        closeTheModal={this.handleCloseModal}
+        beastData={this.state.selectedBeast}
+        />
+
+    
+        }
       {/* <h2> "A beast does not know that he is a beast, and the nearer a man gets to being a beast, the less he knows it."
         
 
