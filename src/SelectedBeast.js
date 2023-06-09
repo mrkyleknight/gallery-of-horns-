@@ -5,6 +5,7 @@ import {Modal, Button} from 'react-bootstrap';
 
 
 
+
 class Selected extends React.Component {
   constructor(props) {
     super(props);
@@ -41,6 +42,8 @@ class Selected extends React.Component {
   render() {
   
     return (
+<>
+     
       
         <Modal show={this.props.showTheModal} onHide={this.props.closeTheModal}>
         
@@ -65,7 +68,7 @@ class Selected extends React.Component {
             </Button>
           </Modal.Footer>
         </Modal>
-      
+        </> 
     )
 
   }

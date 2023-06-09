@@ -12,6 +12,12 @@ Start time: 1735
 Finish time: 2135
 Actual time needed to complete: 300 mins :
 
+Feature #1: Filter by Numbers of Horns
+Estimate of time needed to complete: 2 Hours
+Start time: 1900
+Finish time: 2050
+Actual time needed to complete: 110 mins :
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
