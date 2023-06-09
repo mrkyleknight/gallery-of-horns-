@@ -6,7 +6,7 @@ import data from './data.json';
 import "./Main.css";
 
 
-// import './SelectedBeast';
+/// import './SelectedBeast';
 
 
 class App extends React.Component {
