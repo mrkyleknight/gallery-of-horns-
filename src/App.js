@@ -3,51 +3,33 @@ import Header from './Header';
 import Main from "./Main";
 import Footer from './Footer';
 import data from './data.json';
-import Modal from 'react-bootstrap/Modal';
 import "./Main.css";
+
+// import './SelectedBeast';
 
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
       hearts: 1,
-      showModal: false,
-      selectedBeast: ''
+    
     }
-  }
 
-  addHeart = () => {
-    this.setState({
-      hearts: this.state.hearts + 1
-    });
   }
-
-  handleOpenModal = (beast) => {
-    console.log(beast);
-    this.setState({
-      showModal: true,
-      selectedBeast: beast
-    });
-  }
-
-  handleCloseModal = () => {
-    this.setState({
-      showModal: false,
-    });
-  }
-
   render() {
+    // console.log('+++++++', this.state.selectedBeast)
     return (
       <>
         <Header hearts={this.state.hearts} />
-        <Main 
+        <Main
           addHearts={this.addHearts}
           handleOpenModal={this.handleOpenModal}
           data={data}
-        />  
-        <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
+        />
+        
+        {/* <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
           <Modal.Header closeButton>
             <Modal.Title>{this.state.selectedBeast.title}</Modal.Title>
           </Modal.Header>
@@ -68,8 +50,8 @@ class App extends React.Component {
               Close
             </button>
           </Modal.Footer>
-        </Modal>
-        <Footer /> 
+        </Modal> */}
+        <Footer />
       </>
     );
   }
